@@ -3,7 +3,7 @@ import PropTypes from 'prop-types';
 
 import css from './filter.module.css';
 
-const Filter = ({ handleChange }) => {
+const Filter = ({ handleChange, value }) => {
   return (
     <>
       <label className={css.label} htmlFor="">
@@ -14,6 +14,7 @@ const Filter = ({ handleChange }) => {
         onChange={handleChange}
         name="filter"
         type="text"
+        value={value}
       />
     </>
   );
